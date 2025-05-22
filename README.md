@@ -21,6 +21,7 @@ Developed by: Shree Lekha.S
 RegisterNumber: 212223110052
 */
 ```
+
 ```
 import pandas as pd
 import numpy as np
@@ -29,7 +30,9 @@ import matplotlib.pyplot as plt
 dataset = pd.read_csv('Placement_Data.csv')
 dataset
 ```
+
 ![image](https://github.com/user-attachments/assets/4794de60-4dd2-4d44-8952-0bda85310b21)
+
 
 ```
 dataset = dataset.drop('sl_no',axis=1)
@@ -47,7 +50,9 @@ dataset["hsc_s"] = dataset["hsc_s"].astype('category')
 dataset.dtypes
 
 ```
+
 ![image](https://github.com/user-attachments/assets/6497db18-f024-4f14-b769-79786f522830)
+
 
 ```
 X = dataset.iloc[:, :-1].values
@@ -55,7 +60,9 @@ Y = dataset.iloc[:,-1].values
 
 Y
 ```
+
 ![image](https://github.com/user-attachments/assets/349a6dd0-a37e-467c-8d88-d1554a25abf9)
+
 
 ```
 theta = np.random.randn(X.shape[1])
@@ -84,31 +91,40 @@ accuracy = np.mean(y_pred.flatten() == y)
 print("Accuracy: ", accuracy)
 
 ```
+
 ![image](https://github.com/user-attachments/assets/076bf539-0f79-4a14-8b61-f4304060ccc6)
+
 
 ```
 print(y_pred)
 
 ```
+
 ![image](https://github.com/user-attachments/assets/ec38664a-ed4f-4e58-a9df-
 ae069063de40)
+
 
 ```
 print(Y)
 ```
+
 ![image](https://github.com/user-attachments/assets/b96bf4f5-fb8c-4652-9716-9240739238fd)
+
 
 ```
 xnew = np.array([[0, 87, 0, 95, 0, 2, 78, 2, 0, 0, 1, 0]])
 y_prednew = predict (theta, xnew)
 print(y_prednew)
 ```
+
 ![image](https://github.com/user-attachments/assets/c93b7ec6-8cab-4985-9c3b-34be14997d0b)
+
 ```
 xnew = np.array([[0, 0, 0, 0, 0, 2, 8, 2, 0, 0, 1, 0]])
 y_prednew = predict (theta, xnew)
 print(y_prednew)
 ```
+
 ![image](https://github.com/user-attachments/assets/2a881f31-f6db-4651-a078-078837ab34b3)
 
 
