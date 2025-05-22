@@ -100,8 +100,7 @@ print(y_pred)
 
 ```
 
-![image](https://github.com/user-attachments/assets/ec38664a-ed4f-4e58-a9df-
-ae069063de40)
+![image](https://github.com/user-attachments/assets/ec38664a-ed4f-4e58-a9df-ae069063de40)
 
 
 ```
